@@ -1,52 +1,54 @@
 <div class="container-fluid">
-  <div class="row">
-    <div class="w-100">
-      <div class="col-lg-6 col-md-6">
+  <div class="row fixed-top">
+      <div class="col-1">
+        <a href="/GAMEscreen">
         <div class="shape-left">
-          <div id="square"></div>
+          <div id="square">
+            <img src="assets/backarrow.png" class="arrow w-75">
+          </div>
           <div id="triangle-topleft"></div>
         </div>
+        </a>
       </div>
-    <div class="row">
-      <div class="col-lg-auto col-md-auto">
-        <div class="d-flex justify-content-center fixed-top">
-          <img src="assets/niddel-4.png" class="img-responsive" height="100px" width="120px">
+      <div class="col-10">
+        <div class="logo">
+          <img src="assets/niddel-4.png" class="logo" height="100px" width="120px">
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-auto col-md-auto">
-      <div class="d-flex justify-content-start fixed-top ">
-        <a href="GAMEscreen.html"><img src="assets/backarrow.png" class="arrow" height="50px" width="50px"></a>
-      </div>
-    </div>
-</div>
-</div>
-      <div class="col-lg-auto col-md-auto">
-        <div class="shape-right fixed-top">
+      <div class="col-1">
+        <a href="/dashboard">
+        <div class="shape-right">
           <div id="triangle-topright"></div>
-          <div id="square"></div>
+          <div id="square">
+              <img src="assets/logout.png" class="logout w-75" >
+          </div>
         </div>
+        </a>
       </div>
-    </div>
   </div>
+</div>
+
+
 
 
 <div class="container">
 <div class="row">
   <div class="w-100">
-      <div class="card3 w-50 justify-content-center">
+      <div class="card3 w-75 justify-content-center">
      <div class="card-body text-center">
-    <p class="card-text heading">RANK LEADERBOARD</p>
     <div class="rank">
-      <p>1.</p>
-      <p>2.</p>
-      <p>3.</p>
-      <p>4.</p>
-      <p>5.</p>
-  </div>
+    <img src="assets/whiteICON.png" class="img-fluid" height="180px" width=200px"</img>
+    <p class="card-text"> Hey, <%= firstName %> <%= lastName %> <br> you currently have .. locations saved</p>
+    <p class="card-text share">share via:</p>
+      <div class="col-7">
+        <div class="justify-content-center d-flex float-right">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-size="large">Tweet</a>
+        
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
-</div>
-</div>
-</div>
+  </div>

@@ -53,7 +53,7 @@ color:
 }
 
 .jumbotron .container {
-  max-width: 100%;
+
   display: flex;
   justify-content: center;
 
@@ -62,17 +62,10 @@ color:
 
 .card
 {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
   border-radius: 20px;
-  width: 500px;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
 }
 
 .card2
@@ -80,12 +73,12 @@ color:
 
     margin: 0 auto;
     margin-top: 200px;
-    height: 550px;
-    width: 520px;
-    align-items: middle;
+    height: 700px;
+    width: 600px;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     border-radius: 20px;
+    top: 10%;
 }
 
 .register
@@ -93,7 +86,6 @@ color:
 
   margin: 0px;
   padding: 0px;
-
 
 }
 
@@ -145,6 +137,7 @@ a {
 .signin {
   background-color: #f1f1f1;
   text-align: center;
+  width:: 600px;
 }
 
 
@@ -160,10 +153,25 @@ a {
 
 .img-fluid
 {
-top: 20%;
-margin: 60px;
+ margin: 10px;
+ margin-top: 40px;
 }
 
+@media (min-width: 768px) {
+  .img-fluid {
+    width: 120px;
+  }
+}
+@media (min-width: 992px) {
+  .img-fluid {
+    width: 1400px;
+  }
+}
+@media (min-width: 1200px) {
+  .img-fluid {
+    width: 180px;
+  }
+}
 
 .form-group
 {
@@ -183,6 +191,7 @@ width: 220px;
   border-radius: 40px;
   padding: 14px 28px;
   background-color: #419D78;
+  color: white;
   font-size: 16px;
 
 }
@@ -204,18 +213,6 @@ width: 220px;
   padding: 10px;
 
 }
-
-.Account
-{
-  padding: 0px;
-  position: absolute;
-  top: 75%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-
 
 
 
@@ -292,17 +289,44 @@ top: 0px;
 
 .icon
 {
-  margin: 0px;
-  margin-top: auto;
-  padding: 0px;
-  float: right;
-  z-index: 100px;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: flex-end;
-  align-content: top;
-  align-items: top;
+  margin: 15px;
+  padding-right: 20px;
+
 }
+
+.arrow
+{
+
+  margin: 15px;
+  padding-left: 20px;
+  display: flex;
+  float: left;
+  align-self: flex-start;
+  z-index: 100px;
+
+}
+
+.logo
+{
+
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+
+}
+
+
+.logout
+{
+    margin: 15px;
+    padding-right: 20px;
+    display: flex;
+    z-index: 100;
+    width: 30px;
+    height: 50px;
+
+}
+
 
 
 
@@ -341,7 +365,6 @@ top: 0px;
   display: flex;
   float: right;
   justify-content: flex-end;
-  display: inline-flex;
   z-index: 5;
 }
 
@@ -356,15 +379,11 @@ top: 0px;
 
 
 
-
-
-
-
 .card3
 {
   margin: 0 auto;
   margin-top: 200px;
-  height: 700px;
+  height: 650px;
   width: 520px;
   align-items: middle;
   background-color: #419D78;
@@ -372,20 +391,22 @@ top: 0px;
 }
 
 @media (min-width: 768px) {
-  .card {
+  .card3 {
     width: 350px;
   }
 }
 @media (min-width: 992px) {
-  .card {
+  .card3 {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .card{
+  .card3 {
     width: 1140px;
   }
 }
+
+
 
 .heading
 {
@@ -393,204 +414,75 @@ top: 0px;
   padding: 0px;
   color: white;
   font-size: 1.2em;
-  font-family: 'verdana';
 }
+
+.share
+{
+
+  margin: 0px;
+  font-size: 0.8em;
+  color: #c9cccd
+
+
+}
+
 
 .rank
 {
   margin-top: 20px;
   padding: 0px;
   color: white;
-  font-size: 1em;
-  font-family: 'verdana';
+  font-size: 2em;
   line-height: 100px;
 }
 
 
-#login-box
-{
-    position: relative;
-    margin: 12% auto;
-    height: 400px;
-    width: 600px;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.left-box
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    padding: 40px;
-    width: 300px;
-    height: 400px;
-}
-
-h1
-{
-    margin: 0 0 20px 0;
-    font-weight: 300;
-    font-size: 28px;
-}
-
-input[type="text"],
-input[type="password"]
-{
-    display: block;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    padding: 4px;
-    width: 220px;
-    height: 32px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #aaa;
-    font-family: sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    transition: 0.2s ease;
-}
-
-input[type="submit"]
-{
-    margin-bottom: 28px;
-    width: 120px;
-    height: 32px;
-    background: #419D78;
-    border: none;
-    border-radius: 2px;
-    color: #fff;
-    font-family: sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: 0.2s ease;
-    cursor: pointer;
-
-}
-
-input[type="submit"]:hover,
-input[type="submit"]:focus
-{
-    background: #41B778;
-    transition: 0.2s ease;
-}
-
-.right-box
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-    box-sizing: border-box;
-    padding: 40px;
-    width: 300px;
-    height: 400px;
-    background-image: url(image1.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.or
-{
-    position: absolute;
-    top: 180px;
-    left: 280px;
-    width: 40px;
-    height: 40px;
-    background: #efefef;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-    line-height: 40px;
-    text-align: center;
-}
-
-.right-box .signinwith
-{
-    display: block;
-    margin-bottom: 40px;
-    font-size: 28px;
-    color: #419D78;
-    text-align: center;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-
-button.social
-{
-    margin-bottom: 20px;
-    width: 220px;
-    height: 36px;
-    border: none;
-    border-radius: 2px;
-    color: #fff;
-    font-family: sans-serif;
-    font-weight: 500;
-    transition: 0.2s ease;
-    cursor: pointer;
-}
-
-.facebook
-{
-    background: #32508e;
-}
-.twitter
-{
-    background: #55acee;
-}
-.instagram
-{
-    background: #8C3EAC;
-}
-
-.footer
-{
-  margin-top: 40px;
-  display: flex;
-  justify-content: flex-start;
-  position: fixed;
-   bottom: 0px;
-   width: 100%;
-   flex-wrap: wrap;
-   flex-direction: column;
-   float: left;
-}
 
 .percent-count
 {
-  margin-top: 40px;
+
   font-size: 50px;
-  text-align: center;
-  color: #CBCCCD;
+  color: #419D78;
   display: flex;
   float: left;
+  margin: 5px;
+  padding-left: 20px;
+  z-index: 100;
 }
 
-.progress-bar
+.twitter-share-button
 {
-  width: 280px;
-  height: 26px;
-  background-color: #CBCCCD;
-  border-radius: 13px;
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+
 }
 
-.progress
-{
-  width: 60px;
-  height: 26px;
-  border-radius: 10px;
-  background-color: #419D78;
-  position: fixed;
-}
 
-.arrow
+.card-text
 {
 
-  margin: 15px;
-  padding-right: 20px;
-
-  left: 1%;
+  font-size: 0.8em;
   justify-content: center;
-  align-items: center;
+
+}
+
+.card4
+{
+  margin: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.card-content
+{
+
+top: 50%;
+
 
 }

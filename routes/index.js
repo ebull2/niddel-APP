@@ -13,6 +13,7 @@ router.get('/dashboard', (req, res) => {
     })
 })
 
+
 router.get('/logout', ensureAuthenticated, (req, res) => {
     req.logout();
     req.flash('success_msg', 'Succesful Logout');
@@ -25,9 +26,15 @@ router.get('/GAMEscreen', ensureAuthenticated, (req, res) => {
   res.render('GAMEscreen');
 })
 
-router.get('/RANKscreen', (req, res) =>{
-  res.render('RANKscreen');
+router.get('/RANKscreen', ensureAuthenticated, (req, res) =>{
+  res.render('RANKscreen',{
+    firstName: req.user.firstName,
+    lastName: req.user.lastName
+
+  });
 })
+
+
 
 
 module.exports = router;

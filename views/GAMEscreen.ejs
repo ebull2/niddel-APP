@@ -4,13 +4,20 @@
     <div class="row">
       <div class="w-100">
         <div class="col-lg-6 col-md-6 col-xs-2">
-          <div class="shape-left">
+          <div class="shape-left d-flex fixed-top justify-content-start">
             <div id="square"></div>
             <div id="triangle-topleft"></div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-auto col-md-auto">
+          <div class="d-flex justify-content-start fixed-top ">
+            <div id="percentCount" class="percent-count">0%</div>
+          </div>
+        </div>
+    </div>
       <div class="row">
-        <div class="col-lg-auto col-md-auto col-xs-auto">
+        <div class="col-lg-12 col-md-auto col-xs-auto">
           <div class="d-flex justify-content-center fixed-top">
             <img src="assets/niddel-4.png" class="img" height="100px" width="120px">
           </div>
@@ -18,8 +25,8 @@
       </div>
       <div class="row">
         <div class="w-100">
-        <div class="col-lg-auto col-md-auto col-xs-auto">
-          <div class="shape-right d-flex fixed-top">
+        <div class="col-lg-auto col-md-auto col-xs-auto m4">
+          <div class="shape-right d-flex m4 fixed-top">
             <div class="icon">
             </div>
             <div id="triangle-topright"></div>
@@ -28,10 +35,10 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-12 col-md-auto">
+    <div class="col-lg-12 col-md-auto m3">
     <div class="row">
       <div class="d-flex float-right justify-content-end fixed-top ">
-          <a href="RankScreen.html"><img src="assets/greenICON.png" class="icon" height="50px" width="50px"></a>
+          <a href="RankScreen"><img src="assets/greenICON.png" class="icon" height="50px" width="70px"></a>
       </div>
     </div>
   </div>
@@ -42,7 +49,7 @@
       <div class="container">
         <div class="w-100">
           <div class="d-flex justify-content-center heading-text">
-            <h1>Where's your niche spot?</h1>
+            <h1>click your niche spot</h1>
           </div>
         </div>
       </div>
@@ -53,7 +60,6 @@
           <div class="col-lg-auto col-md-auto">
             <div class="d-flex sjustify-content-center align-items-center">
     <div id="map"></div>
-
 
 
 
@@ -83,25 +89,6 @@
             map: map
           });
 
-          var rad = function(x) {
-  return x * Math.PI / 180;
-};
-
-var getDistance = function(p1, p2) {
-  var R = 6378137; // Earth’s mean radius in meter
-  var dLat = rad(p2.lat() - p1.lat());
-  var dLong = rad(p2.lng() - p1.lng());
-  var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-    Math.cos(rad(p1.lat())) * Math.cos(rad(p2.lat())) *
-    Math.sin(dLong / 2) * Math.sin(dLong / 2);
-  var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  var d = R * c;
-  return d; // returns the distance in meter
-};
-
-
-
-
             infowindow.open(map,marker);
           }
         }
@@ -111,22 +98,6 @@ var getDistance = function(p1, p2) {
     <script> src="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Seattle&destinations=San+Francisco&key=AIzaSyBOL1vi59qcvshHJ8XM3wneBldXF4cCnrc&callback=initMap"</script>
   </div>
 </div>
-</div>
-</div>
-</div>
-
-
-
-    <div class="container-fluid">
-      <div class="row">
-    <div class="w-100">
-      <div class="col-lg-auto col-md-auto">
-        <div class="footer float-left fixed-bottom d-flex flex-wrap justify-content-start ">
-    <div id="percentCount" class="percent-count">0%</div>
-    <div class="progress-bar"></script>
-      <div class="progress" id="progress"></div>
-    </div>
-  </div>
 </div>
 </div>
 </div>
