@@ -1,0 +1,25 @@
+<% if(typeof errorMsgs != 'undefined'){ %>
+<% errorMsgs.forEach(function(errorMsg) { %>
+<div class="card-panel red lighten-2 white-text">
+    <%= errorMsg.msg %>
+</div>
+<% }); %>
+<% } %>
+
+<% if(success_msg != ''){ %>
+<div class="card-panel teal lighten-2 white-text">
+    <%= success_msg %>
+</div>
+<% } %>
+
+<% if(error_msg != ''){ %>
+<div class="card-panel red lighten-2 white-text">
+    <%= error_msg %>
+</div>
+<% } %>
+
+<% if(error != ''){ %>
+<div class="card-panel red lighten-2 white-text">
+    <%= error %>
+</div>
+<% } %>

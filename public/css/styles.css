@@ -1,0 +1,596 @@
+
+*
+{
+
+margin: 0px;
+padding: 0px;
+
+}
+
+body
+{
+    font-family: 'verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #efefef;
+    font-size: 16px;
+    color: #777;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+h1
+{
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+
+h1
+{
+font-family: 'Montserrat', sans-serif;
+font-weight: 100px;
+color:
+}
+
+
+
+.heading
+{
+
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.container
+{
+  margin: auto;
+  padding: 0px;
+}
+
+.jumbotron .container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.card
+{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  width: 500px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card2
+{
+
+    margin: 0 auto;
+    margin-top: 200px;
+    height: 550px;
+    width: 520px;
+    align-items: middle;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}
+
+.register
+{
+
+  margin: 0px;
+  padding: 0px;
+
+
+}
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #419D78;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+
+
+.img-fluid
+{
+top: 20%;
+margin: 60px;
+}
+
+
+.form-group
+{
+
+margin: auto;
+padding-bottom: 20px;
+width: 220px;
+}
+
+
+.btn
+{
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  border-radius: 40px;
+  padding: 14px 28px;
+  background-color: #419D78;
+  font-size: 16px;
+
+}
+
+.btn:hover {background-color:rgba(65,157,120,0.9)}
+
+.sign
+{
+  margin: 0px;
+  color: white;
+  justify-content: center;
+}
+
+
+.text-center
+{
+
+  margin: 0px;
+  padding: 10px;
+
+}
+
+.Account
+{
+  padding: 0px;
+  position: absolute;
+  top: 75%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
+
+
+
+
+.up
+{
+
+  font-size: 14px;
+  color: #4D4D4D;
+  display: inline;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.log
+{
+
+  font-size: 16px;
+  color: #419D78;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.heading-text
+{
+margin: 60px;
+margin-top: 100px;
+display flex;
+align-content: center;
+top: 40px;
+position: relative;
+
+}
+
+
+#map
+{
+  margin: 20px;
+  display: flex;
+  height: 650px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 0px;
+
+}
+
+
+.header
+{
+
+margin: 0px;
+padding: 0px;
+display: flex;
+display: inline;
+flex-direction: row;
+flex-wrap: nowrap;
+top: 0px;
+}
+
+
+.container-fluid
+{
+
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+
+}
+
+
+.icon
+{
+  margin: 0px;
+  margin-top: auto;
+  padding: 0px;
+  float: right;
+  z-index: 100px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  align-content: top;
+  align-items: top;
+}
+
+
+
+.shape-left
+{
+  display: flex;
+ float: left;
+ position: fixed;
+ z-index: 100;
+
+
+
+}
+
+#square {
+    width: 100px;
+    height: 80px;
+    background: #CBCCCD;t
+  }
+
+
+
+
+#triangle-topleft {
+      width: 0;
+      height: 0;
+      border-top: 80px solid #CBCCCD;
+      border-right: 100px solid transparent;
+      }
+
+
+
+
+.shape-right
+{
+  display: flex;
+  float: right;
+  justify-content: flex-end;
+  display: inline-flex;
+  z-index: 5;
+}
+
+
+#triangle-topright {
+         width: 0;
+         height: 0;
+         border-top: 80px solid #CBCCCD;
+         border-left: 100px solid transparent;
+       }
+
+
+
+
+
+
+
+
+.card3
+{
+  margin: 0 auto;
+  margin-top: 200px;
+  height: 700px;
+  width: 520px;
+  align-items: middle;
+  background-color: #419D78;
+  border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 350px;
+  }
+}
+@media (min-width: 992px) {
+  .card {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .card{
+    width: 1140px;
+  }
+}
+
+.heading
+{
+  margin-top: 20px;
+  padding: 0px;
+  color: white;
+  font-size: 1.2em;
+  font-family: 'verdana';
+}
+
+.rank
+{
+  margin-top: 20px;
+  padding: 0px;
+  color: white;
+  font-size: 1em;
+  font-family: 'verdana';
+  line-height: 100px;
+}
+
+
+#login-box
+{
+    position: relative;
+    margin: 12% auto;
+    height: 400px;
+    width: 600px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.left-box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+}
+
+h1
+{
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"]
+{
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+input[type="submit"]
+{
+    margin-bottom: 28px;
+    width: 120px;
+    height: 32px;
+    background: #419D78;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus
+{
+    background: #41B778;
+    transition: 0.2s ease;
+}
+
+.right-box
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+    background-image: url(image1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.or
+{
+    position: absolute;
+    top: 180px;
+    left: 280px;
+    width: 40px;
+    height: 40px;
+    background: #efefef;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    line-height: 40px;
+    text-align: center;
+}
+
+.right-box .signinwith
+{
+    display: block;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #419D78;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+button.social
+{
+    margin-bottom: 20px;
+    width: 220px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.facebook
+{
+    background: #32508e;
+}
+.twitter
+{
+    background: #55acee;
+}
+.instagram
+{
+    background: #8C3EAC;
+}
+
+.footer
+{
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+   bottom: 0px;
+   width: 100%;
+   flex-wrap: wrap;
+   flex-direction: column;
+   float: left;
+}
+
+.percent-count
+{
+  margin-top: 40px;
+  font-size: 50px;
+  text-align: center;
+  color: #CBCCCD;
+  display: flex;
+  float: left;
+}
+
+.progress-bar
+{
+  width: 280px;
+  height: 26px;
+  background-color: #CBCCCD;
+  border-radius: 13px;
+}
+
+.progress
+{
+  width: 60px;
+  height: 26px;
+  border-radius: 10px;
+  background-color: #419D78;
+  position: fixed;
+}
+
+.arrow
+{
+
+  margin: 15px;
+  padding-right: 20px;
+
+  left: 1%;
+  justify-content: center;
+  align-items: center;
+
+}
